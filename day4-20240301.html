@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./day4.css">
+</head>
+<body>
+    <strong>2024年3月1日 天气阴</strong><hr>
+    <a href="./day3--20240229.html">上一天的内容</a><br>
+    <a href="./day5-20240304.html">下一天的内容</a><hr>
+    <ul>
+        <li>复合选择器</li>
+        <li>CSS特性</li>
+        <li>背景属性</li>
+        <li>显示模式</li>
+    </ul>
+    <hr>
+    复合选择器<br>
+    定义：由两个或多个基础选择器，通过不同的方式组合而成<br>
+    作用：更准确、更高效的选择目标元素（标签）<br>
+    后代选择器<br>
+    后代选择器：选中某元素的后代元素<br>
+    选择器写法：父选择器 子选择器（CSS属性），父子选择器之间用空格隔开<br>
+    <div>
+        <span>这是div下span</span>
+        <p>这是div下p
+            <span>div下p下span</span>
+        </p>
+    </div>
+    <hr>
+    并集选择器<br>
+    并集选择器：选中多组标签设置相同的样式<br>
+    选择器写法：选择器1，选择器2，...选择器n {}，选择器之间用，隔开<br>
+    <div>这是div</div>
+    <p class="box">这是p下面box类</p>
+    <span>这是span</span>
+    <div class="box">div下面box类</div><hr>
+    伪类选择器<br>
+    伪类选择器：伪类表示元素状态，选中元素的某个状态设置样式<br>
+    鼠标悬停状态：hover{}<br>
+    <table border="1">
+        <tr>
+            <th>选择器</th>
+            <th>作用</th>
+        </tr>
+        <tr>
+            <td>:link</td>
+            <td>访问前</td>
+        </tr>
+        <tr>
+            <td>:lvisited</td>
+            <td>访问后</td>
+        </tr>
+        <tr>
+            <td>:hover</td>
+            <td>鼠标悬停</td>
+        </tr>
+        <tr>
+            <td>:active</td>
+            <td>点击时（激活）</td>
+        </tr>
+    </table>
+    <br>
+    提示：如果要给超链接设置以上四个状态，需要按照LVHA的顺序书写<hr>
+    CSS特性<br>
+    CSS特性：化简代码/定位问题，并解决问题<br>
+    <ul>
+        <li>继承性</li>
+        <li>层叠性</li>
+        <li>优先级</li>
+    </ul>
+    <br>
+    继承性：子级默认继承父级的文字控制属性<br>
+    层叠性特点：<br>
+    <ul>
+        <li>相同的属性会覆盖：后面的CSS属性覆盖前面的CSS属性</li>
+        <li>不同的属性会叠加：不同的属性都生效</li>
+    </ul><br>
+    优先级：也叫权重，当一个标签使用了多种选择器时，基于不同种类的选择器的匹配规则<br>
+    规则：选择器优先级高的样式生效<br>
+    公式：通配符选择器-标签选择器-类选择器-id选择器-行内样式-!important<br>
+    优先级-叠加计算规则<br>
+    <div class="bgi">测试</div>
+    背景图平铺方式<br>
+    属性名：background-repeat
+    <br>属性值：<br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>属性值</th>
+                <th>效果</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>no-repeat</td>
+                <td>不平铺</td>
+            </tr>
+            <tr>
+                <td>repeat</td>
+                <td>平铺（默认效果）</td>
+            </tr>
+            <tr>
+                <td>repeat-x</td>
+                <td>水平方向平铺</td>
+            </tr>
+            <tr>
+                <td>repeat-y</td>
+                <td>垂直方向平铺</td>
+            </tr>
+        </tbody>
+    </table>
+    块级元素
+    <ul>
+        <li>独占一行</li>
+        <li>宽度默认是父级的100%</li>
+        <li>添加高宽属性生效</li>
+    </ul><br>
+    <div class="test">这是div1</div>
+    <div class="test">这是div2</div>
+    <span class="test">这是span1</span>
+    <span class="test">这是span2</span>
+    <br>
+    转换显示模式：<br>
+    <table border="1">
+        <tr>
+            <th>属性值</th>
+            <th>效果</th>
+        </tr>
+        <tr>
+            <td>block</td>
+            <td>块级</td>
+        </tr>
+        <tr>
+            <td>inline-block</td>
+            <td>行内块</td>
+        </tr>
+        <tr>
+            <td>inline</td>
+            <td>行内</td>
+        </tr>
+    </table>
+</body>
+</html>

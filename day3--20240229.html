@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>初识CSS</title>
+    <!-- link引入外部样式表；rel：关系，样式表 -->
+    <link rel="stylesheet" href="./day3.css">
+</head>
+<body>
+    <strong>2024年2月29日 天气阴</strong>
+    <hr>
+    <a href="./day2--20240228.html">上一天的内容</a><br>
+    <a href="./day4-20240301.html">下一天的内容</a>
+    <hr>
+    CSS学习<br>
+    基础选择器、文字控制属性<br>
+    CSS（层叠样式表），是一种样式表语言，用来描述HTML文档的呈现（梅花内容）。书写位置：title标签下方添加style双标签，style标签里面书写CSS代码。<br>
+    <p>这是一个段落</p>
+    <p>这是另一个段落</p>
+    CSS引入方式
+    <ul>
+        <li>内部样式表：学习使用</li>
+        <ul>
+            <li>CSS代码写在style标签里面</li>
+        </ul>
+        <li>外部样式表：开发使用</li>
+        <ul>
+            <li>CSS代码写在单独的CSS文件中（。
+                css）</li>
+            <li>在HTML使用link标签引入</li>
+        </ul>
+        <li>行内样式：配合JavaScript使用</li>
+        <ul>
+            <li>CSS写在标签的style属性值里</li>
+        </ul>
+    </ul>
+    <div style="color: rgb(255, 0, 0); font-size:large;">这是div标签</div>
+    <hr>
+    选择器<br>
+    作用：查找标签，设置样式。<br>
+    基础选择器
+    <ul>
+        <li>标签选择器</li>
+        <li>类选择器</li>
+        <li>id选择器</li>
+        <li>通配符选择器</li>
+    </ul>
+    标签选择器：使用标签名作为选择器->选中同名标签设置相同的样式<br>
+    类选择器：查找标签，差异化设置标签的显示效果<br>
+    步骤：
+    <ul>
+        <li>定义类选择器->类名</li>
+        <li>使用类选择器->标签添加class=“类名”</li>
+    </ul>
+    注意：
+    <ul>
+        <li>类名自定义，不要用纯数字或中文，尽量用英文命名</li>
+        <li>一个类选择器可以供多个标签使用</li>
+        <li>一个标签可以使用多个类名，类名之间用空格隔开</li>
+    </ul>
+    <p class="blue">这是一个蓝色段落</p>
+    <p class="red">这是一个红色段落</p>
+    <p class="green">这是一个绿色段落</p>
+    <p class="green">这还是一个绿色段落</p>
+    <div class="blue size">这是一个蓝色div大标签</div>
+    <hr>
+    id选择器<br>
+    作用：查找标签，差异化设置标签的显示效果<br>
+    场景：id选择器一般配合JavaScript使用，很少用来设置CSS样式<br>
+    步骤：
+    <ul>
+        <li>定义id选择器->#id名</li>
+        <li>使用id选择器->标签添加id=“id名”</li>
+    </ul>
+    规则：<br>
+    同一个id选择器在一个页面只能使用一次<br>
+    <h3 id="red">这是一个红色h3标题
+    </h3>
+    通配符选择器<br>
+    作用：查找页面所有标签，设置相同样式<br>
+    通配符选择器：*，不需要调用，浏览器自动查找页面所有标签，设置相同样式
+    <hr>
+    画盒子<br>
+    目标：使用合适的选择器画盒子<br>
+    <div class="largebox">第一个盒子</div>
+    <div class="smallbox">第二个盒子</div>
+    <div class="largebox">第三个盒子</div>
+    <div class="smallbox">第四个盒子</div>
+    <hr>
+    文字控制属性：
+    <table border="1">
+        <thead>
+            <tr>
+                <th>描述</th>
+                <th>属性</th>
+                <th>效果</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>字体大小</td>
+                <td>font-size</td>
+                <td>
+                    <span class="largesize">大</span>
+                    <span class="smallsize">小</span>
+                </td>
+            </tr>
+            <tr>
+                <td>字体粗细</td>
+                <td>font-weight</td>
+                <td>
+                    <span class="thick">粗</span>
+                    <span class="thin">细</span>
+                </td>
+            </tr>
+            <tr>
+                <td>字体倾斜</td>
+                <td>font-style</td>
+                <td>
+                    <span class="qingxie">倾斜</span>
+                    <span class="buqingxie">不倾斜</span>
+                </td>
+            </tr>
+            <tr>
+                <td>行高</td>
+                <td>line-height</td>
+                <td class="lineheight">
+                    这是第一行<br>
+                    这是第二行
+                </td>
+            </tr>
+            <tr>
+                <td>字体族</td>
+                <td>font-family</td>
+                <td>
+                    <span class="song">宋体</span>
+                    <span class="lishu">隶书</span>
+                </td>
+            </tr>
+            <tr>
+                <td>字体复合属性</td>
+                <td>font</td>
+                <td class="fuhe">复合属性</td>
+            </tr>
+            <tr>
+                <td>文本缩进</td>
+                <td>text-indent</td>
+                <td class="suojin">
+                    缩进两字
+                </td>
+            </tr>
+            <tr>
+                <td>文本对齐</td>
+                <td>text-align</td>
+                <td class="center">居中对齐</td>
+            </tr>
+            <tr>
+                <td>修饰线</td>
+                <td>text-decoration</td>
+                <td class="xiahuaxian">下划线</td>
+            </tr>
+            <tr>
+                <td>颜色</td>
+                <td>color</td>
+                <td class="color">红色</td>
+            </tr>
+        </tbody>
+    </table>
+    图片居中
+    <div class="center">
+        <img src="./素材库/testjpg.jpg" alt="图片" width="50">
+    </div>
+</body>
+</html>

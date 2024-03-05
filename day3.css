@@ -1,0 +1,73 @@
+/* 这个文件放CSS代码 */
+/* 选择器 {CSS 属性} */
+.red {
+    color:red;
+}
+.blue {
+    color: blue;
+}
+.green {
+    color:green;
+}
+.size {
+    font-size: 30px;
+}
+#red{
+    color: red;
+}
+.largebox {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background-color: aquamarine;
+}
+.smallbox {
+    width: 50px;
+    height: 50px;
+    line-height: 25px;
+    background-color: chartreuse;
+}
+.largesize {
+    font-size: 20px;
+}
+.smallsize {
+    font-size: 12px;
+}
+.thick {
+    font-weight: 700;
+}
+.thin {
+    font-weight: 400;
+}
+.qingxie {
+    font-style: italic;
+}
+.buqingxie {
+    font-style: normal;
+}
+.lineheight {
+    line-height: 2;
+}
+.song {
+    font-family: 宋体;
+}
+.lishu {
+    font-family: 隶书;
+}
+.fuhe {
+    font: italic 700 24px/2 楷体;
+}
+.suojin {
+    text-indent: 2em;
+}
+.center {
+    text-align: center;
+}
+.xiahuaxian {
+    text-decoration: underline;
+    text-align: center;
+}
+.color {
+    color:red;
+    text-align: center;
+}

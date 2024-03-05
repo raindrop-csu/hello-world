@@ -1,0 +1,55 @@
+
+div > span {
+    color:green;
+    font-size: 20px;
+}
+div.box {
+    color:red;
+}
+p.box {
+    color:blue;
+}
+a:link {
+    font-weight: 700;
+}
+a:visited {
+    font-size:20px;
+}
+a:hover {
+    color:red;
+}
+a:active {
+    color:orange;
+}
+div:hover {
+    color:green;
+}
+body {
+    color:#333;
+}
+div {
+    color:green;
+    font-size: 20px;
+}
+div.bgi {
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+    background-image: url(./素材库/QQ图片20230527160203.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+div.test {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+span.test {
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+table {
+    text-align: center;
+}

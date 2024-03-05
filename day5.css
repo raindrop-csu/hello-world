@@ -1,0 +1,57 @@
+a:hover {
+    color:red;
+}
+div.chess {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 5px solid #222;
+    font-size: 0;
+    height: 240px;
+    width: 240px;
+}
+div.chess div.chess1 div:nth-child(2n) {
+    height: 30px;
+    width: 30px;
+    background-color: #555;
+    display: inline-block;
+}
+div.chess div.chess1 div:nth-child(2n+1) {
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    display: inline-block;
+}
+div.chess div.chess2 div:nth-child(2n) {
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    display: inline-block;
+}
+div.chess div.chess2 div:nth-child(2n+1) {
+    height: 30px;
+    width: 30px;
+    background-color: #555;
+    display: inline-block;
+}
+table {
+    text-align: center;
+}
+div.test {
+    width: 200px;
+    height: 200px;
+}
+div.test::before {
+    content: '<';
+}
+div.test::after {
+    content: '>';
+}
+div.abc {
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+    border: 1px solid #000;
+    padding: 20px;
+    margin: 20px;
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二天的内容</title>
+</head>
+<body>
+    <b>2024年2月28日   天气小雨</b>
+    <hr>
+    <a href="./day1--20240227.html">上一天的内容</a><br>
+    <a href="./day3--20240229.html">下一天的内容</a>
+    <hr>
+    01列表<br>
+    标签：嵌套关系，ul嵌套li
+    <ul>
+        <li>列表条目1</li>
+        <li>列表条目2</li>
+        <li>ul标签里面只能包含li标签</li>
+        <li>li标签可以包含任何内容</li>
+        <li>例如这个图片<img src="./素材库/testjpg.jpg" alt="说明文档" title="图片" width="100"></li>
+        <li><audio src="./素材库/近藤浩治 - Super Mario World _ 地上BGM (Inst_)(1) (V0).mp3" controls></audio></li>
+    </ul>
+    <hr>
+    有序列表，ol嵌套li
+    <br>
+    <ol>
+        <li>步骤1</li>
+        <li>步骤2</li>
+        <li>步骤3</li>
+        <li><img src="./素材库/testjpg.jpg" alt="图片" width="100"></li>
+        <li>这是第几个步骤</li>
+    </ol>
+    <hr>
+    定义列表：一般用于网络底部，帮助类<br>
+    dl嵌套dt和dd<br>
+    <dl>
+        <dt>列表标题</dt>
+        <dd>第一行</dd>
+        <dd>第二行</dd>
+    </dl>
+    <hr>
+    02表格标签<br>
+    table嵌套tr，tr嵌套td或th<br>
+    <table border="1">
+        <tr>
+            <th>标签名</th>
+            <th>说明</th>
+        </tr>
+        <tr>
+            <td>table</td>
+            <td>表格</td>
+        </tr>
+        <tr>
+            <td>tr</td>
+            <td>行</td>
+        </tr>
+        <tr>
+            <td>th</td>
+            <td><strong>表头</strong>单元格</td>
+        </tr>
+        <tr>
+            <td>td</td>
+            <td><strong>内容</strong>单元格</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>标签名</th>
+                <th>含义</th>
+                <th>特殊说明</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>thead</td>
+                <td>表格头部</td>
+                <td>表格头部内容</td>
+            </tr>
+            <tr>
+                <td>tbody</td>
+                <td>表格主体</td>
+                <td>主要内容区域</td>
+            </tr>
+            <tr>
+                <td>tfoot</td>
+                <td>表格底部</td>
+                <td>汇总信息区域</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <strong>备注：仅作练习用，实际车次以12306为准</strong><br>
+    合并单元格步骤<br>
+    <ol>
+        <li>明确合并的目标</li>
+        <li>保留<b>最左最上</b>单元格，添加属性（取值是<b>数字</b>，表示<b>需要合并的单元格数量</b>）<br>
+            <ul>
+                <li>跨行合并，保留<b>最上</b>单元格，添加属性rowspan</li>
+                <li>跨列合并，保留<b>最左</b>单元格，添加属性colspan</li>
+            </ul>
+        </li>
+        <li>删除其他单元格</li>
+    </ol>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="6">G816/G813</th>
+            </tr>
+            <tr>
+                <th>省份</th>
+                <th>停靠城市</th>
+                <th>开点</th>
+                <th>到点</th>
+                <th>停留</th>
+                <th>状态</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">陕西</td>
+                <td>西安北</td>
+                <td>09:37</td>
+                <td>09:37</td>
+                <td>出发站</td>
+                <td>正点</td>
+            </tr>
+            <tr>
+                <td>华山北</td>
+                <td>10:07</td>
+                <td>10:05</td>
+                <td>2分</td>
+                <td>正点</td>
+            </tr>
+            <tr>
+                <td rowspan="4">河南</td>
+                <td>渑池南</td>
+                <td>10:51</td>
+                <td>10:46</td>
+                <td>5分</td>
+                <td>正点</td>
+            </tr>
+            <tr>
+                <td>洛阳龙门</td>
+                <td>11:14</td>
+                <td>11:09</td>
+                <td>5分</td>
+                <td>正点</td>
+            </tr>
+            <tr>
+                <td>郑州西</td>
+                <td>11:41</td>
+                <td>11:39</td>
+                <td>2分</td>
+                <td>正点</td>
+            </tr>
+            <tr>
+                <td>郑州</td>
+                <td>12:07</td>
+                <td>12:00</td>
+                <td>7分</td>
+                <td>正点</td>
+            </tr>
+            <tr>
+                <td>湖北</td>
+                <td>武汉</td>
+                <td>13:53</td>
+                <td>13:50</td>
+                <td>3分</td>
+                <td>正点</td>
+            </tr>
+            <tr>
+                <td>湖南</td>
+                <td>长沙南</td>
+                <td>15:15</td>
+                <td>15:11</td>
+                <td>4分</td>
+                <td>正点</td>
+            </tr>
+            <tr>
+                <td rowspan="2">广东</td>
+                <td>广州南</td>
+                <td>17:36</td>
+                <td>17:33</td>
+                <td>3分</td>
+                <td>正点</td>
+            </tr>
+            <tr>
+                <td>深圳北</td>
+                <td>18:05</td>
+                <td>18:05</td>
+                <td>终点站</td>
+                <td>正点</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    表单信息<br>
+    作用：收集用户信息<br>
+    使用场景：
+    <ul>
+        <li>登录页面</li>
+        <li>注册页面</li>
+        <li>搜索区域</li>
+    </ul>
+    文本框text：<input type="text"><br>
+    密码框password：<input type="password"><br>
+    单选框radio：<input type="radio"><br>
+    复选框checkbox：<input type="checkbox"><br>
+    选择文件file：<input type="file"><br>
+    选择多个：<input type="file" multiple><br>
+    <hr>
+    占位文本提示框<br>
+    <input type="text" placeholder="输入账号"><br>
+    <input type="password" placeholder="请输入密码"><br>
+    性别：<input type="radio" name="gender" checked> 男
+    <input type="radio" name="gender"> 女
+    <br>
+    这是一个二进制数：<br>
+    <input type="checkbox" checked>1
+    <input type="checkbox" checked>1
+    <input type="checkbox">1
+    <input type="checkbox" checked>1
+    <hr>
+    下拉菜单：select嵌套option<br>
+    <select>
+        <option>长沙</option>
+        <option selected>广州</option>
+        <option>深圳</option>
+        <option>武汉</option>
+    </select>
+    <br>
+    文本域：多行文本的输入，例如评论区<br>
+    <!-- 右下角有拖拽功能，未来都会禁用，在未来工作中，用CSS设置尺寸 -->
+    <textarea>
+        请输入评论
+    </textarea>
+    <hr>
+    label标签<br>
+    作用：网页中，某个标签的说明文本<br>
+    经验：用label标签绑定文字和表单控件的关系，<b>增大表单控件的点击范围</b><br>
+    <ul>
+        <ul>
+            <li>写法一</li>
+        </ul>
+        <li>label标签只包裹内容，不包裹表单控件</li>
+        <li>设置label标签的for属性值 和表单控件的id属性值相同</li>
+    </ul>
+    季节：
+    <input type="radio" name="season" id="spring" checked> <label for="spring">春</label>
+    <input type="radio" name="season" id="summer"> <label for="summer">夏</label>
+    <label>
+        <input type="radio" name="season" id="autumn"> 秋
+    </label>
+    <label>
+        <input type="radio" name="season" id="winter"> 冬
+    </label>
+    <hr>
+    button标签：<br>
+    <form>
+        <input type="text" placeholder="输入账号"><br>
+        <input type="password" placeholder="请输入密码"><br>
+        <button type="submit">按钮1，暂时没添加效果</button><br>
+        <button type="reset">重置上面的账号密码</button><br>
+        <button type="button">按钮3，暂时没添加效果</button><br>
+    </form>
+    <hr>
+    <div>这是div标签，独占一行，大盒子</div>
+    <span>这是span标签，不换行，小盒子</span><br>
+    如果代码中敲空格，只显示一个<br>
+    想显示两个，这么做：测&nbsp;&nbsp;&nbsp;&nbsp;试<br>
+    &ltp&gt
+</body>
+</html>
